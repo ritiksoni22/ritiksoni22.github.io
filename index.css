@@ -48,14 +48,6 @@ header {
     position: fixed;
     left: 15%;
 
-    & .profile-pic {
-        width: 128px;
-        height: 128px;
-        border-radius: 1000px;
-        object-fit: cover;
-        margin-bottom: 12px;
-    }
-
     & h1 {
         margin: 0;
         font-size: 56px;
@@ -126,10 +118,18 @@ header {
         }
     }
 
-    & .scroll-mouse {
-        display: none;
-    }
+}
 
+.profile-pic {
+    width: 128px;
+    height: 128px;
+    border-radius: 1000px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.scroll-mouse {
+    display: none;
 }
 
 
@@ -447,12 +447,6 @@ main {
         justify-content: center;
         text-align: center;
 
-        & .profile-pic {
-            width: 50%;
-            height: auto;
-            margin-bottom: 5%;
-        }
-
         & p {
             margin: 5%;
         }
@@ -464,15 +458,21 @@ main {
         & .social-icons {
             margin: 0
         }
+    }
 
-        & .scroll-mouse {
-            display: block;
-            position: absolute;
-            bottom: 5%;
+    .profile-pic {
+        width: 50%;
+        height: auto;
+        margin-bottom: 5%;
+    }
 
-            & img {
-                width: 48px;
-            }
+    .scroll-mouse {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+
+        & img {
+            width: 48px;
         }
     }
 
