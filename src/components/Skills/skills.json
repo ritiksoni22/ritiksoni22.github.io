@@ -1,0 +1,64 @@
+[
+    {
+        "type": "Frontend",
+        "list": [
+            "html",
+            "css",
+            "javascript",
+            "jQuery",
+            "react",
+            "webflow"
+        ]
+    },
+    {
+        "type": "Backend",
+        "list": [
+            "node.js",
+            "express.js",
+            "restAPIs",
+            "graphQL",
+            "firebase",
+            "postGresDB",
+            "mariaDB"
+        ]
+    },
+    {
+        "type": "Project management",
+        "list": [
+            "git",
+            "jira",
+            "monday.com",
+            "clickUp"
+        ]
+    },
+    {
+        "type": "Integrations",
+        "list": [
+            "slack",
+            "360Dialog",
+            "stripe",
+            "google calender"
+        ]
+    },
+    {
+        "type": "Tracking & analytics",
+        "list": [
+            "google analytics 4",
+            "google tag manager",
+            "mixpanel",
+            "hotjar",
+            "microsoft clarity",
+            "semrush",
+            "seo minion",
+            "inline manual"
+        ]
+    },
+    {
+        "type": "Design",
+        "list": [
+            "photoshop",
+            "coreldraw",
+            "figma"
+        ]
+    }
+]

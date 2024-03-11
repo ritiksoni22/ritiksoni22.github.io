@@ -1,0 +1,146 @@
+header {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5% 0;
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0 0 0 15%;
+
+    & h1 {
+        margin: 0;
+        font-size: 56px;
+        line-height: 56px;
+        font-weight: 600;
+    }
+
+    & h2 {
+        margin: 0;
+        font-weight: 400;
+        font-size: var(--font-size-xl);
+        line-height: 26px;
+        color: var(--highlight-color);
+    }
+
+    & p {
+        color: var(--secondary-font-color);
+    }
+
+    & .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 32px;
+
+        & .link-div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+        }
+
+        & .link-div a {
+            color: var(--secondary-font-color);
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s ease;
+            font-size: var(--font-size-m);
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        & .link-div .link-line {
+            height: 2px;
+            width: 24px;
+            background-color: var(--secondary-font-color);
+            transition: 0.5s ease;
+        }
+
+        & .link-div:hover .link-line {
+            width: 48px;
+            background-color: var(--highlight-color);
+        }
+
+        & .link-div:hover a {
+            color: var(--highlight-color);
+        }
+    }
+
+    & .social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin-top: auto;
+
+        & img {
+            height: 24px;
+        }
+    }
+
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 1000px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.scroll-mouse {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        left: 5%;
+
+        & h1 {
+            font-size: 48px;
+            line-height: 48px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        position: static;
+        width: 100%;
+        min-height: 100vh;
+        padding: 5%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        & p {
+            margin: 5%;
+        }
+
+        & .links {
+            display: none;
+        }
+
+        & .social-icons {
+            margin: 0
+        }
+    }
+
+    .profile-pic {
+        width: 50%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    .scroll-mouse {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+
+        & img {
+            width: 48px;
+        }
+    }
+}

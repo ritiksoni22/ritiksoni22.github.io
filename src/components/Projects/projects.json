@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Templify",
+        "desc": "A Monday.com application developed with React, integrated into Monday.com's item view. This app enables users to effortlessly create, save, and apply templates, reducing redundant efforts.",
+        "skills": [
+            "react",
+            "monday.com",
+            "graphQl",
+            "node.js",
+            "firebase"
+        ],
+        "thumbnail": "json-images/templify/1.png"
+    },
+    {
+        "name": "Customer Success Portal",
+        "desc": "Consolidate customer onboarding and support onto a unified platform. Develop analytics for team performance and customer satisfaction to enhance decision-making for improved business outcomes.",
+        "skills": [
+            "webflow",
+            "node.js",
+            "firebase",
+            "google calender APIs"
+        ],
+        "thumbnail": "json-images/csp/1.png"
+    },
+    {
+        "name": "WhatsApp Onboarding Portal",
+        "desc": "Help simplify the process of enabling WhatsApp business account for Engati's as well as it's Whitelabel partner's customers.",
+        "skills": [
+            "react",
+            "node.js",
+            "mariaDB",
+            "redis",
+            "360Dialog APIs"
+        ],
+        "thumbnail": "json-images/csp/1.png"
+    },
+    {
+        "name": "Billing Portal",
+        "desc": "Enhance the current process to incorporate global customer invoicing using Stripe API integrations. Establish statistics to support informed business decision-making.",
+        "skills": [
+            "webflow",
+            "node.js",
+            "redis",
+            "postGresDB",
+            "stripe APIs"
+        ],
+        "thumbnail": "json-images/csp/1.png"
+    }
+]

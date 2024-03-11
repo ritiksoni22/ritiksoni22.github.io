@@ -1,0 +1,30 @@
+[
+    {
+        "org": "Workiflow (Freelance)",
+        "designation": "Principal Software Engineer",
+        "link": "https://www.workiflow.com/",
+        "timePeriod": "Nov 2023 - PRESENT",
+        "desc": "Creating applications for submission to the Monday.com marketplace, streamlining various use-cases.",
+        "skills": [
+            "react.js",
+            "node.js",
+            "firebase",
+            "monday.com",
+            "graphQL"
+        ]
+    },
+    {
+        "org": "Avniro | PeopleHum | Engati",
+        "designation": "Senior Software Engineer",
+        "link": "https://www.avniro.com/",
+        "timePeriod": "Sep 2021 - Nov 2023",
+        "desc": "Led teams across Avniro and its affiliated organizations (peopleHum, Engati, Pimonk), overseeing the design, development, and management of comprehensive, user-friendly business solutions from start to finish.",
+        "skills": [
+            "webflow",
+            "react.js",
+            "node.js",
+            "firebase",
+            "postGresDB"
+        ]
+    }
+]

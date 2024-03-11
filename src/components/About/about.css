@@ -1,0 +1,4 @@
+.about p {
+    color: var(--secondary-font-color);
+    line-height: 28px;
+}
