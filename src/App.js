@@ -17,7 +17,7 @@ function App() {
         <Experiences />
         <div className='about'>
           <p>
-            Loosely designed in <span className="underline">Figma</span> and coded in <span className="underline">Visual Studio Code</span> by yours truly. Built with <span className="underline">React.js</span>.
+            Loosely designed in <span className="underline">Figma</span> and coded in <span className="underline">Visual Studio Code</span> by yours truly. Built with <span className="underline">React.js.</span>
           </p>
         </div>
       </main >
