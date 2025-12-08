@@ -6,7 +6,9 @@ const Skills = () => {
     return (
         <div className="skills" id="skills">
             <strong>Skills</strong>
-            {skills_json.map((skill, i) => <SkillCard skill={skill} key={i} />)}
+            <div className="skills-grid">
+                {skills_json.map((skill, i) => <SkillCard skill={skill} key={i} />)}
+            </div>
         </div>
     )
 }

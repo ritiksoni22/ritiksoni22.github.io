@@ -2,47 +2,57 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-
-    & h3 {
-        margin: 0;
-        font-size: var(--font-size-s);
-        line-height: 20px;
-        text-transform: uppercase;
-        font-weight: 500;
-        color: var(--secondary-font-color);
-    }
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
 }
 
-.skill-images {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    margin-top: 8px;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+}
 
-    & img {
-        max-height: 20px;
-    }
+.skill-card {
+    padding: 16px 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    transition: border-color 0.25s ease, transform 0.25s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.skill-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.skill-card h3 {
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-color);
 }
 
 .skill-tags {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
 .skill-tags div {
-    border-radius: 100px;
-    padding: 2px 8px;
-    font-size: var(--font-size-s);
-    font-weight: 500;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 600;
     text-transform: capitalize;
-    transition: all ease 0.3s;
-    border: 1px solid var(--secondary-font-color);
-    color: var(--primary-font-color);
+    transition: all ease 0.2s;
+    border: 1px solid var(--border);
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.04);
 }
 
 .skill-tags div:hover {
-    border-color: var(--primary-bg-color);
-    background-color: var(--highlight-color);
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(248, 79, 57, 0.15);
 }

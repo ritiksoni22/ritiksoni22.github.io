@@ -19,7 +19,9 @@
             "graphQL",
             "firebase",
             "postGresDB",
-            "mariaDB"
+            "mariaDB",
+            "AWS",
+            "supabase"
         ]
     },
     {
@@ -32,12 +34,14 @@
         ]
     },
     {
-        "type": "Integrations",
+        "type": "Integrations & Automations",
         "list": [
             "slack",
             "360Dialog",
             "stripe",
-            "google calender"
+            "google calender",
+            "make.com",
+            "github workflows"
         ]
     },
     {

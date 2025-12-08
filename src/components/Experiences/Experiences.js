@@ -6,7 +6,9 @@ const Experiences = () => {
     return (
         <div className="experience" id="experience">
             <strong>Experience</strong>
-            {experiences_json.map((exp, i) => <ExperienceCard exp={exp} key={i} />)}
+            <div className="experience-list">
+                {experiences_json.map((exp, i) => <ExperienceCard exp={exp} key={i} />)}
+            </div>
         </div>
     )
 }

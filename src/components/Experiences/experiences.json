@@ -4,25 +4,26 @@
         "designation": "Principal Software Engineer",
         "link": "https://www.workiflow.com/",
         "timePeriod": "Nov 2023 - PRESENT",
-        "desc": "Creating applications for submission to the Monday.com marketplace, streamlining various use-cases.",
+        "desc": "Creating web applications for the Monday.com marketplace, hence streamlining and simplifying monday's user experience.",
         "skills": [
-            "react.js",
-            "node.js",
-            "firebase",
+            "MERN stack",
             "monday.com",
-            "graphQL"
+            "make.com",
+            "graphQL",
+            "AWS",
+            "firebase",
+            "supabase"
         ]
     },
     {
         "org": "Avniro | PeopleHum | Engati",
         "designation": "Senior Software Engineer",
-        "link": "https://www.avniro.com/",
+        "link": "https://www.peoplehum.com/",
         "timePeriod": "Sep 2021 - Nov 2023",
-        "desc": "Led teams across Avniro and its affiliated organizations (peopleHum, Engati, Pimonk), overseeing the design, development, and management of comprehensive, user-friendly business solutions from start to finish.",
+        "desc": "Led teams across Avniro and its affiliated organizations (peopleHum, Engati, Pimonk), overseeing the design, development, and management of comprehensive user-friendly software solutions that aid business operations.",
         "skills": [
+            "MERN stack",
             "webflow",
-            "react.js",
-            "node.js",
             "firebase",
             "postGresDB"
         ]

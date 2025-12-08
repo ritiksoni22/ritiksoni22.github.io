@@ -8,20 +8,22 @@ import Experiences from './components/Experiences/Experiences';
 
 function App() {
   return (
-    <>
+    <div className="page">
       <Header />
       <main>
-        <About />
-        <Skills />
+        <div className="intro-grid">
+          <About />
+          <Skills />
+        </div>
         <Projects />
         <Experiences />
-        <div className='about'>
+        <div className="footer-note">
           <p>
             Loosely designed in <span className="underline">Figma</span> and coded in <span className="underline">Visual Studio Code</span> by yours truly. Built with <span className="underline">React.js</span>.
           </p>
         </div>
-      </main >
-    </>
+      </main>
+    </div>
   );
 }
 

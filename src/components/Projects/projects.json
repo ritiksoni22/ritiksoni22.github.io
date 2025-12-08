@@ -4,8 +4,9 @@
         "desc": "A Monday.com application developed with React, integrated into Monday.com's item view. This app enables users to effortlessly create, save, and apply templates, reducing redundant efforts.",
         "skills": [
             "react",
+            "ant design",
             "monday.com",
-            "graphQl",
+            "graphQL",
             "node.js",
             "firebase"
         ],
