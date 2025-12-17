@@ -6,8 +6,8 @@
   --panel-strong: rgba(255, 255, 255, 0.08);
   --text-color: #f4f6fb;
   --muted: #9ba4b5;
-  --accent: #f84f39;
-  --accent-2: #5ad2ff;
+  --accent: #0fb6a6;
+  --accent-2: #66e4d5;
   --border: rgba(255, 255, 255, 0.12);
   --radius-lg: 24px;
   --radius-md: 16px;
@@ -202,15 +202,15 @@ strong {
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, var(--accent), #ff9a64);
+  background: linear-gradient(135deg, var(--accent), #7af0e0);
   color: #0b0b12;
   border: none;
-  box-shadow: 0 12px 40px rgba(248, 79, 57, 0.35);
+  box-shadow: 0 12px 40px rgba(15, 182, 166, 0.35);
 }
 
 .btn.primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 50px rgba(248, 79, 57, 0.45);
+  box-shadow: 0 18px 50px rgba(15, 182, 166, 0.45);
 }
 
 .btn.ghost {

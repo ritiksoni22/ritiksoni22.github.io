@@ -19,7 +19,7 @@
     top: 12px;
     bottom: 12px;
     width: 2px;
-    background: linear-gradient(180deg, rgba(248, 79, 57, 0.7), rgba(90, 210, 255, 0.3));
+    background: linear-gradient(180deg, rgba(15, 182, 166, 0.7), rgba(90, 210, 255, 0.3));
     opacity: 0.7;
     z-index: 0;
 }
@@ -59,7 +59,7 @@
     width: 12px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    box-shadow: 0 0 0 8px rgba(248, 79, 57, 0.12);
+    box-shadow: 0 0 0 8px rgba(15, 182, 166, 0.12);
 }
 
 .experience-body {
