@@ -1,34 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg: #05060f;
-  --bg-grad-1: #0f1327;
-  --bg-grad-2: #171c35;
-  --panel: rgba(255, 255, 255, 0.04);
-  --panel-strong: rgba(255, 255, 255, 0.08);
-  --text-color: #f4f6fb;
-  --muted: #9ba4b5;
+  --bg: #f7f8fa;
+  --bg-grad-1: #ffffff;
+  --bg-grad-2: #eef1f4;
+  --panel: rgba(255, 255, 255, 0.96);
+  --panel-strong: rgba(243, 244, 246, 0.9);
+  --text-color: #1f2937;
+  --muted: #6b7280;
   --accent: #0fb6a6;
-  --accent-2: #66e4d5;
-  --border: rgba(255, 255, 255, 0.12);
+  --accent-2: #34d5c3;
+  --border: rgba(15, 23, 42, 0.1);
   --radius-lg: 24px;
   --radius-md: 16px;
-  --shadow: 0 25px 120px rgba(0, 0, 0, 0.5);
-  --grid-line: rgba(255, 255, 255, 0.02);
-  --max-width: 90vw;
+  --shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  --card-shadow: 0 12px 24px rgba(15, 23, 42, 0.1);
+  --card-shadow-hover: 0 16px 32px rgba(15, 23, 42, 0.14);
+  --card-shadow-strong: 0 20px 40px rgba(15, 23, 42, 0.18);
+  --grid-line: rgba(15, 23, 42, 0.05);
+  --max-width: 1200px;
 }
 
-[data-theme="light"] {
-  --bg: #f7fafc;
-  --bg-grad-1: #ffffff;
-  --bg-grad-2: #dff4f2;
-  --panel: rgba(255, 255, 255, 0.9);
-  --panel-strong: rgba(255, 255, 255, 0.98);
-  --text-color: #0f172a;
-  --muted: #4b5565;
-  --border: rgba(15, 23, 42, 0.12);
-  --shadow: 0 20px 70px rgba(15, 23, 42, 0.12);
-  --grid-line: rgba(15, 23, 42, 0.06);
+[data-theme="dark"] {
+  --bg: #0c0f14;
+  --bg-grad-1: #111827;
+  --bg-grad-2: #1f2937;
+  --panel: rgba(17, 24, 39, 0.88);
+  --panel-strong: rgba(31, 41, 55, 0.92);
+  --text-color: #f3f4f6;
+  --muted: #9ca3af;
+  --border: rgba(148, 163, 184, 0.2);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --card-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+  --card-shadow-hover: 0 20px 44px rgba(0, 0, 0, 0.45);
+  --card-shadow-strong: 0 24px 54px rgba(0, 0, 0, 0.55);
+  --grid-line: rgba(148, 163, 184, 0.08);
 }
 
 * {
@@ -38,16 +44,16 @@
 
 body {
   margin: 0;
-  font-family: 'Manrope', 'Space Grotesk', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background:
     radial-gradient(120% 120% at 20% 20%, var(--bg-grad-1), transparent 45%),
     radial-gradient(90% 120% at 80% 0%, var(--bg-grad-2), transparent 55%),
     var(--bg);
   color: var(--text-color);
   min-height: 100vh;
-  padding: 16px 12px 48px;
+  padding: 24px 0 0 0;
   position: relative;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
   font-size: 18px;
   transition: background 0.3s ease, color 0.3s ease;
 }
@@ -60,7 +66,7 @@ body::before {
     linear-gradient(var(--grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 80px 80px;
-  opacity: 0.25;
+  opacity: 0.12;
   pointer-events: none;
   z-index: 0;
 }
@@ -71,7 +77,7 @@ a {
 
 .page {
   width: 100%;
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -82,13 +88,13 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 48px;
-  padding: 0 0 40px;
+  gap: 72px;
+  padding: 0 56px 24px;
 }
 
 main strong {
-  font-size: 14px;
-  letter-spacing: 1.4px;
+  font-size: 15px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   color: var(--muted);
   display: inline-flex;
@@ -115,13 +121,7 @@ h1,
 h2,
 h3,
 strong {
-  font-family: 'Space Grotesk', 'Manrope', sans-serif;
-}
-
-.intro-grid {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 18px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .about,
@@ -129,19 +129,22 @@ strong {
 .projects,
 .experience,
 .footer-note {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  padding: 18px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 16px 0;
   position: relative;
-  overflow: hidden;
+}
+
+.about {
+  margin-bottom: 16px;
 }
 
 .footer-note {
   text-align: center;
-  padding: 16px;
-  backdrop-filter: blur(6px);
+  padding: 0;
+  backdrop-filter: none;
 }
 
 .underline {
@@ -186,7 +189,7 @@ strong {
   inset: 0;
   border-radius: inherit;
   background: radial-gradient(400px circle at var(--x-px) var(--y-px),
-      rgba(90, 210, 255, 0.14),
+      rgba(15, 182, 166, 0.12),
       transparent 40%);
   pointer-events: none;
   opacity: 0;
@@ -213,30 +216,31 @@ strong {
   border-radius: 12px;
   font-weight: 700;
   text-decoration: none;
-  border: 1px solid var(--border);
+  border: 1px solid transparent;
   color: var(--text-color);
   transition: all 0.25s ease;
 }
 
 .btn.primary {
   background: linear-gradient(135deg, var(--accent), #7af0e0);
-  color: #0b0b12;
+  color: #ffffff;
   border: none;
-  box-shadow: 0 12px 40px rgba(15, 182, 166, 0.35);
+  box-shadow: 0 12px 30px rgba(15, 182, 166, 0.25);
 }
 
 .btn.primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 50px rgba(15, 182, 166, 0.45);
+  box-shadow: 0 18px 40px rgba(15, 182, 166, 0.3);
 }
 
 .btn.ghost {
-  background: var(--panel-strong);
+  background: transparent;
+  border: 1px solid var(--border);
 }
 
 .btn.ghost:hover {
-  border-color: rgba(255, 255, 255, 0.2);
-  background: var(--panel);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .theme-toggle {
@@ -250,20 +254,20 @@ strong {
   padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: var(--panel-strong);
+  background: var(--panel);
   color: var(--text-color);
   font-weight: 700;
   letter-spacing: 0.6px;
   text-transform: uppercase;
   font-size: 12px;
   cursor: pointer;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .theme-toggle:hover {
   transform: translateY(-2px);
-  background: var(--panel);
+  background: var(--panel-strong);
 }
 
 .toggle-dot {
@@ -276,29 +280,39 @@ strong {
 
 @media only screen and (max-width: 1024px) {
   body {
-    padding: 20px 16px 48px;
+    padding: 18px 0 0 0;
   }
 
   main {
-    gap: 28px;
-  }
-
-  .intro-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 56px;
+    padding: 0 32px 24px;
   }
 }
 
 @media only screen and (max-width: 640px) {
   main {
-    padding: 0 4px 32px;
+    padding: 0 20px 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  :root {
+    --max-width: 1320px;
   }
 
-  .about,
-  .skills,
-  .projects,
-  .experience,
-  .footer-note {
-    padding: 20px;
+  main {
+    padding: 0 64px 24px;
+    gap: 80px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  :root {
+    --max-width: 1480px;
+  }
+
+  main {
+    padding: 0 80px 24px;
+    gap: 88px;
   }
 }

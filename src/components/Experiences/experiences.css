@@ -1,14 +1,14 @@
 .experience {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    background: linear-gradient(140deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)), var(--panel);
+    gap: 24px;
+    background: transparent;
 }
 
 .experience-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
     position: relative;
 }
 
@@ -16,25 +16,24 @@
     content: "";
     position: absolute;
     left: 18px;
-    top: 12px;
-    bottom: 12px;
+    top: 16px;
+    bottom: 16px;
     width: 2px;
-    background: linear-gradient(180deg, rgba(15, 182, 166, 0.7), rgba(90, 210, 255, 0.3));
+    background: linear-gradient(180deg, rgba(15, 182, 166, 0.7), rgba(52, 213, 195, 0.35));
     opacity: 0.7;
     z-index: 0;
 }
 
 .experience-card {
     display: block;
-    padding: 16px;
-    padding-left: 38px;
+    padding: 22px 22px 22px 44px;
     width: 100%;
     border-radius: var(--radius-lg);
-    border: 1px solid var(--border);
+    border: none;
     color: var(--text-color);
     text-decoration: none;
-    background: var(--panel-strong);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    background: var(--panel);
+    box-shadow: var(--card-shadow);
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -54,7 +53,7 @@
 .timeline-dot {
     position: absolute;
     left: 12px;
-    top: 26px;
+    top: 30px;
     height: 12px;
     width: 12px;
     border-radius: 50%;
@@ -65,7 +64,7 @@
 .experience-body {
     display: grid;
     grid-template-columns: 160px 1fr;
-    gap: 12px;
+    gap: 16px;
     align-items: flex-start;
 }
 
@@ -102,7 +101,7 @@
 }
 
 .experience-card .skill-tags div {
-    background: var(--panel);
+    background: var(--panel-strong);
 }
 
 @media only screen and (max-width: 720px) {
@@ -112,5 +111,12 @@
 
     .ec-time-range {
         font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .experience-body {
+        grid-template-columns: 200px 1fr;
+        gap: 16px;
     }
 }

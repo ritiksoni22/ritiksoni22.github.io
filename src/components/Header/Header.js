@@ -53,7 +53,7 @@ const Header = () => {
                 <div className="hero-copy">
                     <p className="eyebrow">Full Stack Software Engineer</p>
                     <h1>Ritik Soni</h1>
-                    <p className="lead">I build exceptional and accessible digital experiences for the web.</p>
+                    <p className="lead">Your friendly neighbourhood full stack developer and JavaScript engineer. I build exceptional and accessible digital experiences for the web.</p>
                     <div className="hero-actions">
                         <a className="btn primary" href="#projects">View projects</a>
                     </div>
@@ -66,13 +66,8 @@ const Header = () => {
                 </div>
 
                 <div className="hero-visual">
-                    <div className="portrait-wrap">
-                        <span className="orb orb-orange" aria-hidden="true"></span>
-                        <span className="orb orb-cyan" aria-hidden="true"></span>
-                        <img className="profile-pic" src={ritik} alt="Ritik Soni" />
-                    </div>
-                    <div className="floating-card">
-                        <p>Your friendly neighbourhood full stack developer and JavaScript engineer.</p>
+                    <div className="portrait">
+                        <img src={ritik} alt="Ritik Soni" />
                     </div>
                 </div>
             </div>

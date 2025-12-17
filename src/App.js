@@ -8,7 +8,7 @@ import Projects from './components/Projects/Projects';
 import Experiences from './components/Experiences/Experiences';
 
 function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
@@ -29,16 +29,12 @@ function App() {
     <div className="page">
       <Header />
       <main>
-        <div className="intro-grid">
-          <About />
-          <Skills />
-        </div>
+        <About />
+        <Skills />
         <Projects />
         <Experiences />
         <div className="footer-note">
-          <p>
-            Loosely designed in <span className="underline">Figma</span> and coded in <span className="underline">Visual Studio Code</span> by yours truly. Built with <span className="underline">React.js</span>.
-          </p>
+          Loosely designed in <span className="underline">Figma</span> and coded in <span className="underline">Visual Studio Code</span> by yours truly. Built with <span className="underline">React.js</span>.
         </div>
       </main>
       <button

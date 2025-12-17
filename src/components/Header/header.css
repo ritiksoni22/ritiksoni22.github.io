@@ -1,19 +1,17 @@
 .hero {
     position: relative;
-    overflow: hidden;
-    border-radius: 32px;
-    background: radial-gradient(120% 120% at 80% 0%, rgba(15, 182, 166, 0.22), transparent),
-        linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-    border: 1px solid var(--border);
-    box-shadow: var(--shadow);
-    padding: 28px;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 24px 56px 48px;
     max-width: var(--max-width);
-    margin: 18px auto 44px;
+    margin: 0 auto 64px;
     isolation: isolate;
 }
 
 .hero::after {
-    content: "";
+    content: none;
     position: absolute;
     inset: -40% 20% auto auto;
     height: 160%;
@@ -31,7 +29,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    margin-bottom: 36px;
+    margin-bottom: 52px;
     position: relative;
     z-index: 1;
 }
@@ -42,7 +40,7 @@
     gap: 8px;
     padding: 10px 14px;
     background: var(--panel-strong);
-    border: 1px solid var(--border);
+    border: none;
     border-radius: 999px;
     font-weight: 700;
     letter-spacing: 0.6px;
@@ -94,7 +92,9 @@
 
 .nav-links a:hover {
     color: var(--text-color);
-    background: var(--panel);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 6px;
 }
 
 .nav-actions {
@@ -110,7 +110,7 @@
     gap: 8px;
     padding: 8px 14px;
     border-radius: 999px;
-    border: 1px solid var(--border);
+    border: none;
     background: var(--panel-strong);
     color: var(--text-color);
     font-size: 12px;
@@ -139,7 +139,7 @@
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
-    gap: 32px;
+    gap: 48px;
     position: relative;
     z-index: 1;
 }
@@ -171,20 +171,20 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin: 18px 0 10px;
+    margin: 24px 0 16px;
 }
 
 .hero-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 14px;
+    margin-top: 18px;
 }
 
 .hero-tags span {
     padding: 8px 12px;
     border-radius: 12px;
-    border: 1px solid var(--border);
+    border: none;
     background: var(--panel-strong);
     font-size: 13px;
     color: var(--text-color);
@@ -194,32 +194,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
 }
 
-.portrait-wrap {
+.portrait {
     position: relative;
     width: min(320px, 100%);
     aspect-ratio: 1;
     border-radius: 28px;
     display: grid;
     place-items: center;
-    background: radial-gradient(circle at 30% 20%, rgba(90, 210, 255, 0.2), transparent 45%),
-        radial-gradient(circle at 80% 80%, rgba(15, 182, 166, 0.35), transparent 50%),
-        var(--panel);
-    border: 1px solid var(--border);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+    background: var(--panel-strong);
+    border: none;
+    box-shadow: var(--card-shadow-strong);
     overflow: hidden;
 }
 
-.profile-pic {
-    width: 80%;
-    height: 80%;
+.portrait img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 24px;
-    border: 2px solid rgba(255, 255, 255, 0.35);
+    border: none;
     z-index: 1;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--card-shadow-strong);
 }
 
 .orb {
@@ -227,7 +225,7 @@
     inset: 0;
     border-radius: 30px;
     filter: blur(60px);
-    opacity: 0.7;
+    opacity: 0.3;
 }
 
 .orb-orange {
@@ -240,14 +238,14 @@
 
 .floating-card {
     width: 100%;
-    padding: 14px 16px;
+    padding: 18px 20px;
     border-radius: 16px;
-    border: 1px solid var(--border);
-    background: var(--panel-strong);
+    border: none;
+    background: var(--panel);
     color: var(--text-color);
     line-height: 1.6;
     font-size: 14px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--card-shadow);
 }
 
 .scroll-mouse {
@@ -259,9 +257,9 @@
     align-items: center;
     justify-content: center;
     padding: 8px 12px;
-    background: var(--panel-strong);
+    background: var(--panel);
     border-radius: 999px;
-    border: 1px solid var(--border);
+    border: none;
     transition: transform 0.25s ease, background 0.25s ease;
     z-index: 1;
 }
@@ -274,18 +272,17 @@
 
 .scroll-mouse:hover {
     transform: translate(-50%, -2px);
-    background: var(--panel);
+    background: var(--panel-strong);
 }
 
 @media only screen and (max-width: 1024px) {
     .hero {
-        padding: 30px 24px 48px;
-        margin: 16px auto 48px;
+        padding: 18px 32px 40px;
+        margin: 0 auto 48px;
     }
 
     .hero-layout {
-        grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 36px;
     }
 
     .hero-visual {
@@ -303,6 +300,15 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .hero {
+        padding: 16px 20px 32px;
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
     .hero-nav {
         gap: 10px;
     }
@@ -321,8 +327,22 @@
         font-size: clamp(38px, 10vw, 50px);
     }
 
-    .portrait-wrap {
+    .portrait {
         width: 100%;
         max-width: 320px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .hero {
+        padding: 16px 56px 36px;
+        margin-bottom: 48px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .hero {
+        padding: 20px 72px 44px;
+        margin-bottom: 56px;
     }
 }

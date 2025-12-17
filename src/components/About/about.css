@@ -1,29 +1,14 @@
 .about {
     display: grid;
-    gap: 12px;
-    background: linear-gradient(140deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)), var(--panel);
-    backdrop-filter: blur(8px);
+    gap: 18px;
     position: relative;
-    isolation: isolate;
-}
-
-.about::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(320px circle at 20% 20%, rgba(90, 210, 255, 0.12), transparent 50%);
-    pointer-events: none;
-    opacity: 0.7;
-    z-index: 0;
 }
 
 .about p {
     color: var(--muted);
     line-height: 1.75;
     margin: 0;
-    font-size: 15px;
-    position: relative;
-    z-index: 1;
+    font-size: 16px;
 }
 
 .about p+p {
