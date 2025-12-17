@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './app.css';
 // components
 import Header from "./components/Header/Header";
@@ -7,6 +8,23 @@ import Projects from './components/Projects/Projects';
 import Experiences from './components/Experiences/Experiences';
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+      setTheme(storedTheme);
+      return;
+    }
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    setTheme(prefersLight ? 'light' : 'dark');
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
   return (
     <div className="page">
       <Header />
@@ -23,6 +41,15 @@ function App() {
           </p>
         </div>
       </main>
+      <button
+        className="theme-toggle"
+        type="button"
+        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+      >
+        <span className="toggle-dot" aria-hidden="true"></span>
+        {theme === 'dark' ? 'Light mode' : 'Dark mode'}
+      </button>
     </div>
   );
 }

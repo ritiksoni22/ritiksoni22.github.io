@@ -23,6 +23,7 @@
     filter: blur(40px);
     opacity: 0.8;
     z-index: 0;
+    pointer-events: none;
 }
 
 .hero-nav {
@@ -31,6 +32,7 @@
     justify-content: space-between;
     gap: 16px;
     margin-bottom: 36px;
+    position: relative;
     z-index: 1;
 }
 
@@ -39,7 +41,7 @@
     align-items: center;
     gap: 8px;
     padding: 10px 14px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--panel-strong);
     border: 1px solid var(--border);
     border-radius: 999px;
     font-weight: 700;
@@ -92,7 +94,7 @@
 
 .nav-links a:hover {
     color: var(--text-color);
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--panel);
 }
 
 .nav-actions {
@@ -109,7 +111,7 @@
     padding: 8px 14px;
     border-radius: 999px;
     border: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--panel-strong);
     color: var(--text-color);
     font-size: 12px;
     text-transform: uppercase;
@@ -183,7 +185,7 @@
     padding: 8px 12px;
     border-radius: 12px;
     border: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--panel-strong);
     font-size: 13px;
     color: var(--text-color);
 }
@@ -204,8 +206,8 @@
     place-items: center;
     background: radial-gradient(circle at 30% 20%, rgba(90, 210, 255, 0.2), transparent 45%),
         radial-gradient(circle at 80% 80%, rgba(15, 182, 166, 0.35), transparent 50%),
-        rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+        var(--panel);
+    border: 1px solid var(--border);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
     overflow: hidden;
 }
@@ -241,7 +243,7 @@
     padding: 14px 16px;
     border-radius: 16px;
     border: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.06);
+    background: var(--panel-strong);
     color: var(--text-color);
     line-height: 1.6;
     font-size: 14px;
@@ -257,7 +259,7 @@
     align-items: center;
     justify-content: center;
     padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--panel-strong);
     border-radius: 999px;
     border: 1px solid var(--border);
     transition: transform 0.25s ease, background 0.25s ease;
@@ -272,7 +274,7 @@
 
 .scroll-mouse:hover {
     transform: translate(-50%, -2px);
-    background: rgba(255, 255, 255, 0.09);
+    background: var(--panel);
 }
 
 @media only screen and (max-width: 1024px) {

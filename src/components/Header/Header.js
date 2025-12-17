@@ -56,7 +56,6 @@ const Header = () => {
                     <p className="lead">I build exceptional and accessible digital experiences for the web.</p>
                     <div className="hero-actions">
                         <a className="btn primary" href="#projects">View projects</a>
-                        <a className="btn ghost" href="mailto:ritikvsoni2000@gmail.com">Email me</a>
                     </div>
                     <div className="hero-tags">
                         <span>React.js</span>

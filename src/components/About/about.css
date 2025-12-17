@@ -1,7 +1,7 @@
 .about {
     display: grid;
     gap: 12px;
-    background: linear-gradient(140deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)), var(--panel);
     backdrop-filter: blur(8px);
     position: relative;
     isolation: isolate;
