@@ -1,0 +1,31 @@
+[
+    {
+        "org": "Workiflow LLC",
+        "designation": "Lead Software Engineer",
+        "link": "https://www.workiflow.com/",
+        "timePeriod": "Nov 2023 - Mar 2026",
+        "desc": "Architected and launched a template management application on the Monday.com marketplace, generating $40k+ ARR with workflow automation driving recurring enterprise adoption. Built a custom property management platform for a law firm overseeing 4,000+ apartments, and optimized API calls and load sequences for a 40% improvement in app-load and execution time.",
+        "skills": [
+            "MERN stack",
+            "monday.com",
+            "make.com",
+            "graphQL",
+            "AWS",
+            "firebase",
+            "supabase"
+        ]
+    },
+    {
+        "org": "PeopleHum Technologies Pvt. Ltd.",
+        "designation": "Senior Software Engineer",
+        "link": "https://www.peoplehum.com/",
+        "timePeriod": "May 2022 - Nov 2023",
+        "desc": "Built 4 customer-facing web applications integrating Stripe, WhatsApp Business, Google Calendar & Jira to replace manual workflows across Marketing, Sales, Finance, and Customer Success. Built a free ATS with 350+ job templates that became a profitable product feature, and standardized development procedures while training 7 junior engineers across Avniro subsidiaries.",
+        "skills": [
+            "MERN stack",
+            "webflow",
+            "firebase",
+            "postGresDB"
+        ]
+    }
+]
