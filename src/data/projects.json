@@ -11,7 +11,7 @@
                 "node.js",
                 "firebase"
             ],
-            "thumbnail": "json-images/templify/1.png"
+            "thumbnail": "images/project/templify.webp"
         },
         {
             "name": "Apartment Mgmt Platform",
@@ -23,7 +23,7 @@
                 "node.js",
                 "supabase"
             ],
-            "thumbnail": "json-images/templify/1.png"
+            "thumbnail": "images/project/templify.webp"
         },
         {
             "name": "Customer Success Portal",
@@ -34,7 +34,7 @@
                 "firebase",
                 "google calender APIs"
             ],
-            "thumbnail": "json-images/csp/1.png"
+            "thumbnail": "images/project/csp.webp"
         },
         {
             "name": "WhatsApp Onboarding Portal",
@@ -46,7 +46,7 @@
                 "redis",
                 "360Dialog APIs"
             ],
-            "thumbnail": "json-images/csp/1.png"
+            "thumbnail": "images/project/csp.webp"
         },
         {
             "name": "Billing Portal",
@@ -58,7 +58,7 @@
                 "postGresDB",
                 "stripe APIs"
             ],
-            "thumbnail": "json-images/csp/1.png"
+            "thumbnail": "images/project/csp.webp"
         },
         {
             "name": "Partnerships Portal",
@@ -69,7 +69,7 @@
                 "redis",
                 "postGresDB"
             ],
-            "thumbnail": "json-images/csp/1.png"
+            "thumbnail": "images/project/csp.webp"
         }
     ],
     "personal": [
@@ -84,18 +84,20 @@
                 "anthropic APIs"
             ],
             "url": "https://github.com/ritiksoni22/road-trip-app",
-            "thumbnail": "json-images/templify/1.png"
+            "thumbnail": "images/project/tripzzy.webp"
         },
         {
-            "name": "Late-entry mail composer",
-            "desc": "A tool that helps compose standardised email and send it for IIM Udaipur campus formalities, reducing grunt work and saving time.",
+            "name": "Quik mailer",
+            "desc": "A tool that helps compose standardised email and send it for IIM Udaipur campus formalities, offering convenience and saving time.",
             "skills": [
                 "html5",
                 "css3",
-                "javascript"
+                "javascript",
+                "json",
+                "mailto APIs"
             ],
-            "url": "https://ritiksoni22.github.io/late-entry-mail-composer/",
-            "thumbnail": "json-images/templify/1.png"
+            "url": "https://ritiksoni22.github.io/quik-mailer/",
+            "thumbnail": "/images/project/quik-mailer.webp"
         },
         {
             "name": "Random quote machine",
@@ -106,7 +108,7 @@
                 "javascript"
             ],
             "url": "https://ritiksoni22.github.io/random-quote-machine/",
-            "thumbnail": "json-images/templify/1.png"
+            "thumbnail": "/images/project/random-quote-machine.webp"
         },
         {
             "name": "Gujarati Character Counter",
@@ -117,7 +119,7 @@
                 "javascript"
             ],
             "url": "https://ritiksoni22.github.io/guj-char-counter/",
-            "thumbnail": "json-images/templify/1.png"
+            "thumbnail": "/images/project/gujarati-character-counter.webp"
         }
     ]
 }
