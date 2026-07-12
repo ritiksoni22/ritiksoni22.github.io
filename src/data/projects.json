@@ -13,6 +13,17 @@
         "thumbnail": "json-images/templify/1.png"
     },
     {
+        "name": "Apartment Mgmt Platform",
+        "desc": "A React-Node-Supabase web application that manages 4000+ apartments for a major US law firm, streamlining case tracking, document workflows, tenant and apartment management.",
+        "skills": [
+            "react",
+            "radix-ui",
+            "node.js",
+            "supabase"
+        ],
+        "thumbnail": "json-images/templify/1.png"
+    },
+    {
         "name": "Customer Success Portal",
         "desc": "Consolidate customer onboarding and support onto a unified platform. Develop analytics for team performance and customer satisfaction to enhance decision-making for improved business outcomes.",
         "skills": [
@@ -44,6 +55,17 @@
             "redis",
             "postGresDB",
             "stripe APIs"
+        ],
+        "thumbnail": "json-images/csp/1.png"
+    },
+    {
+        "name": "Partnerships Portal",
+        "desc": "Bring all partnership-related information and processes into a single platform. Develop analytics to support informed business decision-making.",
+        "skills": [
+            "webflow",
+            "node.js",
+            "redis",
+            "postGresDB"
         ],
         "thumbnail": "json-images/csp/1.png"
     }

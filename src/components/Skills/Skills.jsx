@@ -17,7 +17,6 @@ export default function Skills() {
                   const icon = getSkillIcon(skill)
                   return (
                     <li key={skill} className="pill">
-                      {icon && <img src={icon} alt="" aria-hidden="true" />}
                       {skill}
                     </li>
                   )

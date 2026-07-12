@@ -33,10 +33,6 @@ export default function Hero() {
           </span>
         </div>
       </div>
-
-      <a href="#about" className="hero__scroll" aria-label="Scroll to About section">
-        <img src="/images/arrow.png" alt="" aria-hidden="true" />
-      </a>
     </section>
   )
 }

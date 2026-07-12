@@ -4,6 +4,7 @@
         "list": [
             "html",
             "css",
+            "tailwind.css",
             "javascript",
             "jQuery",
             "react",
@@ -30,7 +31,8 @@
             "git",
             "jira",
             "monday.com",
-            "clickUp"
+            "clickUp",
+            "salesforce"
         ]
     },
     {
@@ -62,7 +64,9 @@
         "list": [
             "photoshop",
             "coreldraw",
-            "figma"
+            "figma",
+            "ant design",
+            "radix-ui"
         ]
     }
 ]
