@@ -1,0 +1,54 @@
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.contact__lead {
+  max-width: 420px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+
+.contact__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+
+.contact__email {
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 4px;
+}
+
+.contact__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact__socials a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.contact__socials img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}

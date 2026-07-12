@@ -1,0 +1,65 @@
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.project-card__visual {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.project-card__visual span {
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: var(--font-script);
+}
+
+.project-card__visual--0 {
+  background: linear-gradient(135deg, var(--color-card-dark), var(--navy));
+  color: var(--color-card-dark-text);
+}
+
+.project-card__visual--1 {
+  background: linear-gradient(135deg, var(--yellow), var(--pale));
+  color: var(--navy);
+}
+
+.project-card__visual--2 {
+  background: linear-gradient(135deg, var(--navy), var(--olive));
+  color: var(--pale);
+}
+
+.project-card__visual--3 {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--yellow),
+    var(--yellow) 14px,
+    var(--pale) 14px,
+    var(--pale) 28px
+  );
+  color: var(--navy);
+}
+
+.project-card__title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.project-card__desc {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.project-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

@@ -1,0 +1,54 @@
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 760px;
+  border-left: 2px solid var(--color-border);
+}
+
+.experience-item {
+  position: relative;
+  padding-left: 32px;
+}
+
+.experience-item__marker {
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 2px solid var(--color-border);
+}
+
+.experience-item__period {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 6px;
+}
+
+.experience-item__title {
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+}
+
+.experience-item__title a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.experience-item__desc {
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.experience-item__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
