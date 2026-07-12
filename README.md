@@ -9,7 +9,7 @@
 [![Made with plain CSS](https://img.shields.io/badge/Styling-Plain%20CSS-03045E?style=flat-square)](#-design-system)
 [![Theme](https://img.shields.io/badge/Theme-Light%20%2F%20Dark-F5EE84?style=flat-square)](#-features)
 
-[Live Demo](https://ritiksoni22.github.io/) · [Report an issue](https://github.com/ritiksoni22/portfolio-v3/issues)
+[Live Demo](https://ritiksoni22.github.io/) · [Report an issue](https://github.com/ritiksoni22/ritiksoni22.github.io/issues)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/hero-dark.png">
@@ -138,7 +138,7 @@ Nothing here is hardcoded — edit the JSON and the site updates:
 ## 📌 Roadmap
 
 - [ ] Swap placeholder gradient cards in Work for real project screenshots
-- [ ] Wire up GitHub Pages / Actions deploy
+- [x] Wire up GitHub Pages / Actions deploy
 - [ ] Add analytics
 
 ## 📬 Connect
