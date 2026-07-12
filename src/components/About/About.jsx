@@ -2,9 +2,11 @@ import SectionHeading from '../SectionHeading/SectionHeading'
 import './About.css'
 
 const STATS = [
-  { value: '3.5+', label: 'Years of experience' },
+  { value: '4+', label: 'Years of experience' },
+  { value: '2', label: 'Startups digitally transformed' },
   { value: '6', label: 'Products built' },
-  { value: '$40k+', label: 'ARR generated' },
+  { value: '7', label: 'Teammates trained' },
+  { value: '$40k+', label: 'ARR generated' }
 ]
 
 export default function About() {

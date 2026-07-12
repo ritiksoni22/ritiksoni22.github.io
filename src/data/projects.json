@@ -18,6 +18,7 @@
         "skills": [
             "react",
             "radix-ui",
+            "tailwind-css",
             "node.js",
             "supabase"
         ],
