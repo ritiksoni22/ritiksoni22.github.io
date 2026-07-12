@@ -1,73 +1,123 @@
-[
-    {
-        "name": "Templify",
-        "desc": "A Monday.com application developed with React, integrated into Monday.com's item view. This app enables users to effortlessly create, save, and apply templates, reducing redundant efforts.",
-        "skills": [
-            "react",
-            "ant design",
-            "monday.com",
-            "graphQL",
-            "node.js",
-            "firebase"
-        ],
-        "thumbnail": "json-images/templify/1.png"
-    },
-    {
-        "name": "Apartment Mgmt Platform",
-        "desc": "A React-Node-Supabase web application that manages 4000+ apartments for a major US law firm, streamlining case tracking, document workflows, tenant and apartment management.",
-        "skills": [
-            "react",
-            "radix-ui",
-            "tailwind-css",
-            "node.js",
-            "supabase"
-        ],
-        "thumbnail": "json-images/templify/1.png"
-    },
-    {
-        "name": "Customer Success Portal",
-        "desc": "Consolidate customer onboarding and support onto a unified platform. Develop analytics for team performance and customer satisfaction to enhance decision-making for improved business outcomes.",
-        "skills": [
-            "webflow",
-            "node.js",
-            "firebase",
-            "google calender APIs"
-        ],
-        "thumbnail": "json-images/csp/1.png"
-    },
-    {
-        "name": "WhatsApp Onboarding Portal",
-        "desc": "Help simplify the process of enabling WhatsApp business account for Engati's as well as it's Whitelabel partner's customers.",
-        "skills": [
-            "react",
-            "node.js",
-            "mariaDB",
-            "redis",
-            "360Dialog APIs"
-        ],
-        "thumbnail": "json-images/csp/1.png"
-    },
-    {
-        "name": "Billing Portal",
-        "desc": "Enhance the current process to incorporate global customer invoicing using Stripe API integrations. Establish statistics to support informed business decision-making.",
-        "skills": [
-            "webflow",
-            "node.js",
-            "redis",
-            "postGresDB",
-            "stripe APIs"
-        ],
-        "thumbnail": "json-images/csp/1.png"
-    },
-    {
-        "name": "Partnerships Portal",
-        "desc": "Bring all partnership-related information and processes into a single platform. Develop analytics to support informed business decision-making.",
-        "skills": [
-            "webflow",
-            "node.js",
-            "redis",
-            "postGresDB"
-        ],
-        "thumbnail": "json-images/csp/1.png"
-    }
-]
+{
+    "professional": [
+        {
+            "name": "Templify",
+            "desc": "A Monday.com application developed with React, integrated into Monday.com's item view. This app enables users to effortlessly create, save, and apply templates, reducing redundant efforts.",
+            "skills": [
+                "react",
+                "ant design",
+                "monday.com",
+                "graphQL",
+                "node.js",
+                "firebase"
+            ],
+            "thumbnail": "json-images/templify/1.png"
+        },
+        {
+            "name": "Apartment Mgmt Platform",
+            "desc": "A React-Node-Supabase web application that manages 4000+ apartments for a major US law firm, streamlining case tracking, document workflows, tenant and apartment management.",
+            "skills": [
+                "react",
+                "radix-ui",
+                "tailwind-css",
+                "node.js",
+                "supabase"
+            ],
+            "thumbnail": "json-images/templify/1.png"
+        },
+        {
+            "name": "Customer Success Portal",
+            "desc": "Consolidate customer onboarding and support onto a unified platform. Develop analytics for team performance and customer satisfaction to enhance decision-making for improved business outcomes.",
+            "skills": [
+                "webflow",
+                "node.js",
+                "firebase",
+                "google calender APIs"
+            ],
+            "thumbnail": "json-images/csp/1.png"
+        },
+        {
+            "name": "WhatsApp Onboarding Portal",
+            "desc": "Help simplify the process of enabling WhatsApp business account for Engati's as well as it's Whitelabel partner's customers.",
+            "skills": [
+                "react",
+                "node.js",
+                "mariaDB",
+                "redis",
+                "360Dialog APIs"
+            ],
+            "thumbnail": "json-images/csp/1.png"
+        },
+        {
+            "name": "Billing Portal",
+            "desc": "Enhance the current process to incorporate global customer invoicing using Stripe API integrations. Establish statistics to support informed business decision-making.",
+            "skills": [
+                "webflow",
+                "node.js",
+                "redis",
+                "postGresDB",
+                "stripe APIs"
+            ],
+            "thumbnail": "json-images/csp/1.png"
+        },
+        {
+            "name": "Partnerships Portal",
+            "desc": "Bring all partnership-related information and processes into a single platform. Develop analytics to support informed business decision-making.",
+            "skills": [
+                "webflow",
+                "node.js",
+                "redis",
+                "postGresDB"
+            ],
+            "thumbnail": "json-images/csp/1.png"
+        }
+    ],
+    "personal": [
+        {
+            "name": "Tripzzy",
+            "desc": "Making every road trip more informed and joyous. Going A->B? know the best places to visit, food spots, hotels, music that fits the vibe, clean restrooms, fuel/charing stations",
+            "skills": [
+                "react-native",
+                "expo",
+                "firebase",
+                "google maps APIs",
+                "anthropic APIs"
+            ],
+            "url": "https://github.com/ritiksoni22/road-trip-app",
+            "thumbnail": "json-images/templify/1.png"
+        },
+        {
+            "name": "Late-entry mail composer",
+            "desc": "A tool that helps compose standardised email and send it for IIM Udaipur campus formalities, reducing grunt work and saving time.",
+            "skills": [
+                "html5",
+                "css3",
+                "javascript"
+            ],
+            "url": "https://ritiksoni22.github.io/late-entry-mail-composer/",
+            "thumbnail": "json-images/templify/1.png"
+        },
+        {
+            "name": "Random quote machine",
+            "desc": "A basic HTML site that generates random quotes from a JSON file and displays them on the page. The user can click a button to generate a new quote.",
+            "skills": [
+                "html5",
+                "css3",
+                "javascript"
+            ],
+            "url": "https://ritiksoni22.github.io/random-quote-machine/",
+            "thumbnail": "json-images/templify/1.png"
+        },
+        {
+            "name": "Gujarati Character Counter",
+            "desc": "Counts number of characters in a gujarati text, with rules and exceptions",
+            "skills": [
+                "html5",
+                "css3",
+                "javascript"
+            ],
+            "url": "https://ritiksoni22.github.io/guj-char-counter/",
+            "thumbnail": "json-images/templify/1.png"
+        }
+    ]
+}

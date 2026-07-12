@@ -1,3 +1,4 @@
+import CreditsPopover from './CreditsPopover'
 import './Footer.css'
 
 export default function Footer() {
@@ -5,7 +6,10 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <p>© {new Date().getFullYear()} Ritik Soni. All rights reserved.</p>
-        <a href="#top">Back to top ↑</a>
+        <div className="footer__right">
+          <CreditsPopover />
+          <a href="#top">Back to top ↑</a>
+        </div>
       </div>
     </footer>
   )

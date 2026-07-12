@@ -10,7 +10,10 @@ export default function Experience() {
         <SectionHeading>experience</SectionHeading>
         <ul className="experience__list">
           {experiences.map((experience) => (
-            <ExperienceItem key={experience.org} experience={experience} />
+            <ExperienceItem
+              key={`${experience.org}-${experience.timePeriod}`}
+              experience={experience}
+            />
           ))}
         </ul>
       </div>

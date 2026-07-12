@@ -12,14 +12,15 @@ export default function ExperienceItem({ experience }) {
             {org}
           </a>
         </h3>
-        <p className="experience-item__desc">{desc}</p>
-        <ul className="experience-item__skills">
-          {skills.map((skill) => (
-            <li key={skill} className="pill">
-              {skill}
-            </li>
-          ))}
-        </ul>
+        {desc && <p className="experience-item__desc">{desc}</p>}
+        {skills &&
+          <ul className="experience-item__skills">
+            {skills.map((skill) => (
+              <li key={skill} className="pill">
+                {skill}
+              </li>
+            ))}
+          </ul>}
       </div>
     </li>
   )

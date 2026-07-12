@@ -19,7 +19,7 @@
         "org": "PeopleHum Technologies Pvt. Ltd.",
         "designation": "Senior Software Engineer",
         "link": "https://www.peoplehum.com/",
-        "timePeriod": "May 2022 - Nov 2023",
+        "timePeriod": "Jul 2023 - Nov 2023",
         "desc": "Built 4 customer-facing web applications integrating Stripe, WhatsApp Business, Google Calendar & Jira to replace manual workflows across Marketing, Sales, Finance, and Customer Success. Built a free ATS with 350+ job templates that became a profitable product feature, and standardized development procedures while training 7 junior engineers across Avniro subsidiaries.",
         "skills": [
             "MERN stack",
@@ -27,5 +27,17 @@
             "firebase",
             "postGresDB"
         ]
+    },
+    {
+        "org": "PeopleHum Technologies Pvt. Ltd.",
+        "designation": "Software Development Engineer",
+        "link": "https://www.peoplehum.com/",
+        "timePeriod": "Feb 2022 - Jun 2023"
+    },
+    {
+        "org": "PeopleHum Technologies Pvt. Ltd.",
+        "designation": "Webflow developer (probation)",
+        "link": "https://www.peoplehum.com/",
+        "timePeriod": "Sept 2021 - Jan 2022"
     }
 ]

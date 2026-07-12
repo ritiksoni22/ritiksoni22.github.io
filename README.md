@@ -23,7 +23,7 @@
 
 ## ✨ Features
 
-- **One-page layout** — Hero, About, Experience, Work, Skills, and Contact in a single smooth-scrolling flow
+- **One-page layout** — Hero, About, Experience, Projects, Skills, and Contact in a single smooth-scrolling flow
 - **Light / dark mode** — persisted to `localStorage`, defaults to the visitor's OS preference
 - **Data-driven content** — experience, projects, and skills are read from plain JSON files, not hardcoded in JSX
 - **Component-first** — every UI element (buttons, nav, cards, pills, theme toggle) is its own reusable component
@@ -60,7 +60,7 @@
 | ---------- | -------------------------------------------------- |
 | Framework  | [React 19](https://react.dev) + [Vite 8](https://vitejs.dev) |
 | Styling    | Plain CSS with custom properties (no CSS framework) |
-| Fonts      | [Poppins](https://fonts.google.com/specials/Featured/poppins) (body/UI) & Kaushan Script (accent) — self-hosted, no CDN |
+| Fonts      | [Poppins](https://fonts.google.com/specimen/Poppins) (body/UI) & [Kaushan Script](https://fonts.google.com/specimen/Kaushan+Script) (accent) — self-hosted, no CDN |
 | State      | React Context for theme, local component state elsewhere |
 | Data       | Static JSON (`src/data/*.json`) for experience, projects, and skills |
 
@@ -95,7 +95,7 @@ npm run preview
 │   │   ├── Hero/
 │   │   ├── About/
 │   │   ├── Experience/
-│   │   ├── Work/
+│   │   ├── Projects/
 │   │   ├── Skills/
 │   │   ├── Contact/
 │   │   └── Footer/
@@ -131,13 +131,13 @@ Dark mode reuses the same palette — navy becomes the background, pale yellow b
 Nothing here is hardcoded — edit the JSON and the site updates:
 
 - **Experience** → `src/data/experiences.json`
-- **Projects** → `src/data/projects.json`
+- **Projects** → `src/data/projects.json` (grouped under `professional` / `personal`; add an optional `url` to link a card to its hosted site)
 - **Skills** → `src/data/skills.json`
 - **Contact links & resume** → `src/data/contact.js`
 
 ## 📌 Roadmap
 
-- [ ] Swap placeholder gradient cards in Work for real project screenshots
+- [ ] Swap placeholder gradient cards in Projects for real project screenshots
 - [x] Wire up GitHub Pages / Actions deploy
 - [ ] Add analytics
 
